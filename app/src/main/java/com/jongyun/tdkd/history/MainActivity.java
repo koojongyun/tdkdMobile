@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
                     inputPassword.setText(inputPassword.getText().toString().trim());
                 }
 
-                loginService.getLoginCertify(inputLoginId, inputPassword) {
-
-                }
+//                loginService.getLoginCertify(inputLoginId, inputPassword) {
+//
+//                }
             }
         });
     }
