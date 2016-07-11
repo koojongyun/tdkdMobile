@@ -3,7 +3,10 @@ package com.jongyun.tdkd.history;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.jongyun.tdkd.activity.MainActivity;
+
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
@@ -41,7 +44,7 @@ public class MainActivityTest {
     }
 
     @Test
-    public void whenInputLoginIdSpace_thenShowToastMessage() throws Exception {
+    public void whenInputLoginIdWithSpace_thenShowToastMessage() throws Exception {
         loginId.setText("    ");
         loginButton.performClick();
 
@@ -49,7 +52,7 @@ public class MainActivityTest {
     }
 
     @Test
-    public void whenInputPasswordSpace_thenShowToastMessage() throws Exception {
+    public void whenInputPasswordWithSpace_thenShowToastMessage() throws Exception {
         loginId.setText("james053");
         password.setText("    ");
         loginButton.performClick();
@@ -76,6 +79,7 @@ public class MainActivityTest {
     }
 
     @Test
+    @Ignore
     public void whenInputIncorrectLoginIdAndPassword_thenShowToastMessage() throws Exception {
         loginId.setText("incorrectId");
         password.setText("incorrectPassword");
