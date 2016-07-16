@@ -3,12 +3,14 @@
     package="com.jongyun.tdkd.history">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:name="com.jongyun.tdkd.BaseApplication"
         android:theme="@style/AppTheme">
         <activity android:name="com.jongyun.tdkd.activity.MainActivity">
             <intent-filter>

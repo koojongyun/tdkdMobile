@@ -8,14 +8,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.jongyun.tdkd.history.R;
 import com.jongyun.tdkd.service.LoginService;
 
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends Activity {
     Retrofit retrofit;
@@ -30,7 +32,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        retrofit = new Retrofit.Builder().baseUrl(loginService.API_URL).build();
+        Gson gson = new GsonBuilder().setLenient().create();
+
+        retrofit = new Retrofit.Builder().baseUrl("http://10.0.2.2:3000/").addConverterFactory(GsonConverterFactory.create(gson)).build();
+
         loginService = retrofit.create(LoginService.class);
 
         inputLoginId = (EditText) findViewById(R.id.loginTextBox);
@@ -51,16 +56,17 @@ public class MainActivity extends Activity {
                     inputLoginId.setText(inputLoginId.getText().toString().trim());
                     inputPassword.setText(inputPassword.getText().toString().trim());
 
-                    Call<ResponseBody> loginResult = loginService.getLogin(inputLoginId.getText().toString(), inputPassword.getText().toString());
-                    loginResult.enqueue(new Callback<ResponseBody>() {
+                    Call<String> loginResult = loginService.getLogin(inputLoginId.getText().toString(), inputPassword.getText().toString());
+                    loginResult.enqueue(new Callback<String>() {
                         @Override
-                        public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                        public void onResponse(Call<String> loginResult, Response<String> response) {
                             Log.d("성공", "로그인이 성공하였습니다.");
+                            Log.d("성공", response.body().toString());
                         }
-
                         @Override
-                        public void onFailure(Call<ResponseBody> call, Throwable t) {
+                        public void onFailure(Call<String> call,  Throwable t) {
                             Log.d("실패", "로그인이 실패 하였습니다.");
+                            Log.d("실패", t.getMessage());
                         }
                     });
                 }

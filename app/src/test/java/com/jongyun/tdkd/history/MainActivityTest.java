@@ -44,7 +44,7 @@ public class MainActivityTest {
     }
 
     @Test
-    public void whenInputLoginIdWithSpace_thenShowToastMessage() throws Exception {
+    public void whenInputLoginIdIsSpace_thenShowToastMessage() throws Exception {
         loginId.setText("    ");
         loginButton.performClick();
 
@@ -52,7 +52,7 @@ public class MainActivityTest {
     }
 
     @Test
-    public void whenInputPasswordWithSpace_thenShowToastMessage() throws Exception {
+    public void whenInputPasswordIsSpace_thenShowToastMessage() throws Exception {
         loginId.setText("james053");
         password.setText("    ");
         loginButton.performClick();
