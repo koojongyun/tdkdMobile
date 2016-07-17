@@ -20,6 +20,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends Activity {
+    Gson gson = new GsonBuilder().setLenient().create();
+
     Retrofit retrofit;
     LoginService loginService;
 
@@ -32,16 +34,17 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Gson gson = new GsonBuilder().setLenient().create();
-
-        retrofit = new Retrofit.Builder().baseUrl("http://10.0.2.2:3000/").addConverterFactory(GsonConverterFactory.create(gson)).build();
+        retrofit = new Retrofit
+                .Builder()
+                .baseUrl("http://10.0.2.2:3000/")
+                .addConverterFactory(GsonConverterFactory.create(gson))
+                .build();
 
         loginService = retrofit.create(LoginService.class);
 
         inputLoginId = (EditText) findViewById(R.id.loginTextBox);
         inputPassword = (EditText) findViewById(R.id.passwordTextBox);
         loginButton = (Button) findViewById(R.id.loginButton);
-
     }
 
     @Override
@@ -62,6 +65,8 @@ public class MainActivity extends Activity {
                         public void onResponse(Call<String> loginResult, Response<String> response) {
                             Log.d("성공", "로그인이 성공하였습니다.");
                             Log.d("성공", response.body().toString());
+                            //TODO 로그인이 성공할 경우 다음 액티비티로 이동한다.
+
                         }
                         @Override
                         public void onFailure(Call<String> call,  Throwable t) {
