@@ -37,6 +37,13 @@
         <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_68f07cd31821a8e5032a72520574c62dd5ba32a4/classes.dex" />
     </item>
     <item
+        jar="/Users/koojongyun/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.4.1_8ee293d9c2fb9ab49a55d006b08eaa7799bfb0be/classes.dex" />
+    </item>
+    <item
         jar="/Users/koojongyun/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
         jumboMode="true"
         revision="24.0.0"
@@ -44,25 +51,11 @@
         <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_4147ce6499951a5ff610e23f8b3d254ae0392ae8/classes.dex" />
     </item>
     <item
-        jar="/Users/koojongyun/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
-        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_f4c0cbebe4663921f5e365d2b1629437b2e75e37/classes.dex" />
-    </item>
-    <item
         jar="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
         jumboMode="true"
         revision="24.0.0"
         sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
         <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_b146a863dd55733fe303d62cfd2f40fbd967212c/classes.dex" />
-    </item>
-    <item
-        jar="/Users/koojongyun/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
-        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.0_0eb967aa4ce5eac8b38efdaac031119463f3902a/classes.dex" />
     </item>
     <item
         jar="/Users/koojongyun/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.0.0/2943c74db6d4346ab8c6531adac91fa05c137c40/support-annotations-24.0.0.jar"
@@ -77,6 +70,13 @@
         revision="24.0.0"
         sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
         <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_a6dcc9136ca0a43064aae2dfc1c3313eb247e5a2/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.9.0_130417549a41593f3db7d4ffd154d9ea407e8dc3/classes.dex" />
     </item>
     <item
         jar="/Users/koojongyun/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
