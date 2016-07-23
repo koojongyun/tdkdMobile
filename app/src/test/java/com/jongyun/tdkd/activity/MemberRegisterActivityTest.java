@@ -42,7 +42,7 @@ public class MemberRegisterActivityTest {
 
     @Test
     public void whenInputLoginIdIsSpecialCharacter_thenShowToastMessage() throws Exception {
-        id.setText("1@34567");
+        id.setText("1@3%$veg7");
         memberRegisterButton.performClick();
         assertThat(ShadowToast.getTextOfLatestToast().toString()).isEqualTo("특수 문자 입력은 허용되지 않습니다.");
 
@@ -52,7 +52,7 @@ public class MemberRegisterActivityTest {
     }
 
     @Test
-    public void whenInputNothingInIDTextColumn() throws Exception {
+    public void whenInputNothingInIDTextColumn_thenShowToastMessage() throws Exception {
         id.setText("");
         memberRegisterButton.performClick();
         assertThat(ShadowToast.getTextOfLatestToast().toString()).isEqualTo("ID를 입력해 주십시오.");
@@ -63,5 +63,10 @@ public class MemberRegisterActivityTest {
 
     }
 
-
+    @Test
+    public void whenInputShortLengthId_thenShowToastMessage() throws Exception {
+        id.setText("james");
+        memberRegisterButton.performClick();
+        assertThat(ShadowToast.getTextOfLatestToast().toString()).isEqualTo("ID의 최소 길이는 6자리 이상입니다.");
+    }
 }

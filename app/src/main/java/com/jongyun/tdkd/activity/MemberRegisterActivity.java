@@ -53,8 +53,13 @@ public class MemberRegisterActivity extends Activity {
             return false;
         }
 
-        if (!id.getText().toString().matches("[^A-Za-z0-9 ]")) {
+        if (id.getText().toString().matches("[^A-Za-z0-9]")) {
             Toast.makeText(getApplicationContext(), "특수 문자 입력은 허용되지 않습니다.", Toast.LENGTH_LONG).show();
+            return false;
+        }
+
+        if(id.getText().toString().length() < 6) {
+            Toast.makeText(getApplicationContext(), "ID의 최소 길이는 6자리 이상입니다.", Toast.LENGTH_LONG).show();
             return false;
         }
 
