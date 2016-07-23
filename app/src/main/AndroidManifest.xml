@@ -19,6 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.jongyun.tdkd.activity.MemberRegisterActivity" android:screenOrientation="portrait" > </activity>
     </application>
-
 </manifest>

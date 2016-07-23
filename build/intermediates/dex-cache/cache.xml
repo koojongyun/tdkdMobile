@@ -5,14 +5,14 @@
         jar="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="44017fcab25e42a1da7db5148727981d04d4983c">
+        sha1="00965a70d898a904f503dae443f5b178ff55d30a">
         <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_49c50de203a2f4dd0eb0fe95613b988e6abaf0e5/classes.dex" />
     </item>
     <item
         jar="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="93e9d24aeeedf04cd62f1af2b41188b4dbab2d97">
+        sha1="0b7b279b059a71fab839f09cd9462e47b2237da7">
         <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2a8611f22d5d190c63e275a0236168d074f560fc/classes.dex" />
     </item>
     <item

@@ -1,6 +1,7 @@
 package com.jongyun.tdkd.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -28,6 +29,7 @@ public class MainActivity extends Activity {
     EditText inputLoginId;
     EditText inputPassword;
     Button loginButton;
+    Button registerButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,7 @@ public class MainActivity extends Activity {
         inputLoginId = (EditText) findViewById(R.id.loginTextBox);
         inputPassword = (EditText) findViewById(R.id.passwordTextBox);
         loginButton = (Button) findViewById(R.id.loginButton);
+        registerButton = (Button) findViewById(R.id.memberRegisterButton);
     }
 
     @Override
@@ -52,21 +55,19 @@ public class MainActivity extends Activity {
         super.onStart();
 
         loginButton.setOnClickListener(new View.OnClickListener() {
-
             @Override
-            public void onClick(View view) {
+            public void onClick(final View view) {
                 if(validationInputData()) {
                     inputLoginId.setText(inputLoginId.getText().toString().trim());
                     inputPassword.setText(inputPassword.getText().toString().trim());
 
-                    Call<String> loginResult = loginService.getLogin(inputLoginId.getText().toString(), inputPassword.getText().toString());
-                    loginResult.enqueue(new Callback<String>() {
+                    Call<String> loginService = MainActivity.this.loginService.getLogin(inputLoginId.getText().toString(), inputPassword.getText().toString());
+                    loginService.enqueue(new Callback<String>() {
                         @Override
                         public void onResponse(Call<String> loginResult, Response<String> response) {
                             Log.d("성공", "로그인이 성공하였습니다.");
                             Log.d("성공", response.body().toString());
-                            //TODO 로그인이 성공할 경우 다음 액티비티로 이동한다.
-
+                            Toast.makeText(getApplicationContext(), "로그인 되었습니다.", Toast.LENGTH_LONG);
                         }
                         @Override
                         public void onFailure(Call<String> call,  Throwable t) {
@@ -75,6 +76,15 @@ public class MainActivity extends Activity {
                         }
                     });
                 }
+            }
+        });
+
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //TODO 로그인이 성공할 경우 다음 액티비티로 이동한다.
+                Intent intent = new Intent(getApplicationContext(), MemberRegisterActivity.class);
+                startActivity(intent);
             }
         });
     }

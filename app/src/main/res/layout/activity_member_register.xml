@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="80dp">
+    <TextView
+        android:id="@+id/register_id"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:textAlignment="textEnd"
+        android:text="ID"/>
+
+    <EditText
+        android:id="@+id/register_id_text"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/register_id"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/id_duplicate_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/register_id_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="13dp"
+        android:text="중복확인"/>
+
+    <TextView
+        android:id="@+id/register_password"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/register_id"
+        android:textAlignment="textEnd"
+        android:text="Password"/>
+        
+    <EditText
+        android:id="@+id/register_password_text"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/register_password"
+        android:layout_below="@+id/register_id_text"/>
+
+    <TextView
+        android:id="@+id/register_email"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/register_password"
+        android:textAlignment="textEnd"
+        android:text="이메일"/>
+
+    <EditText
+        android:id="@+id/register_email_text"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/register_email"
+        android:layout_below="@+id/register_password_text"/>
+
+    <TextView
+        android:id="@+id/register_address"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/register_email"
+        android:textAlignment="textEnd"
+        android:text="주소"/>
+
+    <EditText
+        android:id="@+id/register_address_text"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/register_address"
+        android:layout_below="@+id/register_email_text"/>
+
+    <TextView
+        android:id="@+id/register_phone_number"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/register_address"
+        android:textAlignment="textEnd"
+        android:text="전화번호"/>
+
+    <EditText
+        android:id="@+id/register_phone_number_text"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/register_phone_number"
+        android:layout_below="@+id/register_address_text"/>
+    </RelativeLayout>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/member_register_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:text="회원 가입"
+            >
+        </Button>
+    </android.support.v7.widget.LinearLayoutCompat>
+</LinearLayout>
