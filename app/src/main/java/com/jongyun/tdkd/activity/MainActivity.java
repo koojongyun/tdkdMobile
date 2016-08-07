@@ -11,8 +11,10 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.jongyun.tdkd.TDKDApplication;
+import com.jongyun.tdkd.api.LoginApi;
+import com.jongyun.tdkd.domain.LoginVO;
 import com.jongyun.tdkd.history.R;
-import com.jongyun.tdkd.service.LoginService;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -24,7 +26,7 @@ public class MainActivity extends Activity {
     Gson gson = new GsonBuilder().setLenient().create();
 
     Retrofit retrofit;
-    LoginService loginService;
+    LoginApi loginApi;
 
     EditText inputLoginId;
     EditText inputPassword;
@@ -34,6 +36,8 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TDKDApplication.inject(this);
+
         setContentView(R.layout.activity_main);
 
         retrofit = new Retrofit
@@ -42,7 +46,7 @@ public class MainActivity extends Activity {
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 
-        loginService = retrofit.create(LoginService.class);
+        loginApi = retrofit.create(LoginApi.class);
 
         inputLoginId = (EditText) findViewById(R.id.loginTextBox);
         inputPassword = (EditText) findViewById(R.id.passwordTextBox);
@@ -61,18 +65,26 @@ public class MainActivity extends Activity {
                     inputLoginId.setText(inputLoginId.getText().toString().trim());
                     inputPassword.setText(inputPassword.getText().toString().trim());
 
-                    Call<String> loginService = MainActivity.this.loginService.getLogin(inputLoginId.getText().toString(), inputPassword.getText().toString());
-                    loginService.enqueue(new Callback<String>() {
+                    Call<LoginVO> loginResult = loginApi.getLogin(inputLoginId.getText().toString(),inputPassword.getText().toString());
+                    loginResult.enqueue( new Callback<LoginVO>() {
                         @Override
-                        public void onResponse(Call<String> loginResult, Response<String> response) {
-                            Log.d("성공", "로그인이 성공하였습니다.");
-                            Log.d("성공", response.body().toString());
-                            Toast.makeText(getApplicationContext(), "로그인 되었습니다.", Toast.LENGTH_LONG);
+                        public void onResponse(Call<LoginVO> call, Response<LoginVO> response) {
+                            if("PASS".equals(response.body().getResult())) {
+                                Log.d("성공", "로그인이 성공하였습니다.");
+                                Log.d("성공", response.body().getResult().toString());
+                                Toast.makeText(getApplicationContext(), "로그인 되었습니다.", Toast.LENGTH_LONG).show();
+                            } else {
+                                Log.d("실패", "아이디와 비밀번호를 확인해 주십시오.");
+                                Log.d("실패", response.body().getResult().toString());
+                                Toast.makeText(getApplicationContext(), "아이디와 비밀번호를 확인해 주십시오.", Toast.LENGTH_LONG).show();
+                            }
                         }
+
                         @Override
-                        public void onFailure(Call<String> call,  Throwable t) {
+                        public void onFailure(Call<LoginVO> call, Throwable t) {
                             Log.d("실패", "로그인이 실패 하였습니다.");
                             Log.d("실패", t.getMessage());
+                            Toast.makeText(getApplicationContext(), "로그인에 실패하였습니다.", Toast.LENGTH_LONG).show();
                         }
                     });
                 }

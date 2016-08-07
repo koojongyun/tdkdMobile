@@ -25,6 +25,8 @@ public class MainActivityTest {
     EditText password;
     Button loginButton;
 
+
+
     @Before
     public void setUp() throws Exception {
         subject = Robolectric.setupActivity(MainActivity.class);

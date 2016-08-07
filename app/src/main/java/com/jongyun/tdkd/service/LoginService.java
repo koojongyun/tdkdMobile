@@ -1,11 +1,26 @@
 package com.jongyun.tdkd.service;
 
+import com.jongyun.tdkd.TDKDApplication;
+import com.jongyun.tdkd.api.LoginApi;
+import com.jongyun.tdkd.domain.LoginVO;
+
+import javax.inject.Inject;
+
 import retrofit2.Call;
-import retrofit2.http.GET;
-import retrofit2.http.Path;
 
-public interface LoginService {
+public class LoginService {
+    @Inject
+    LoginApi loginApi;
 
-    @GET("login/{id}/{password}")
-    Call<String> getLogin(@Path("id") String id, @Path("password") String password);
+    public LoginService() {
+        TDKDApplication.inject(this);
+    }
+
+    public Call<LoginVO> getLogin(String loginId, String password) {
+        return loginApi.getLogin(loginId, password);
+    }
+
+    public Call<String> getCheckIdDuplicated(String loginId) {
+        return loginApi.getCheckIdDuplicated(loginId);
+    }
 }
