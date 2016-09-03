@@ -1,2 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="be8d8514f33a05708b301ff505ee724c60cae244">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_49c50de203a2f4dd0eb0fe95613b988e6abaf0e5/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="412a8b1bb320be14f151b56e0a25fa74e82bea48">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2a8611f22d5d190c63e275a0236168d074f560fc/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_b9015396c067d697b99c369f995d809a4a1e6043/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_b55faa7d6bd34645e684112f917e4e80f48fe4d0/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_68f07cd31821a8e5032a72520574c62dd5ba32a4/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.1.1/3af19f153122737b372622fa6c81dd11a1c6b999/support-annotations-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_82d22b83e31a30d5292fbc5ecf1954dcd7d6d59a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.4.1_8ee293d9c2fb9ab49a55d006b08eaa7799bfb0be/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_4147ce6499951a5ff610e23f8b3d254ae0392ae8/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_1a3a48bce674bd8fb16129b2a1be8350e8b3e475/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.1.1_c92cad9179637886c78b3854418dfce407d265bf/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_eb9816cbf332cf07c5e3b8d505683494ebee99d1/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/commons/0.9.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="cee98beed542ecad574ef4cbdc5e2d7244ea9661">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.afollestad.material-dialogs-commons-0.9.0.1_536d4c4b1834c9eb3012b4bfeceeda76121c9fc0/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.7/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="1478a113f04bf0b679037b4f6bd88bd1837b96a3">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/me.zhanghai.android.materialprogressbar-library-1.1.7_2d12fc9857bd446e9aae262774e90af4fef16fa0/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/exploded-aar/com.android.support/design/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.1.1_387b255534ab3f02905e1720230731065e593099/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.9.0_130417549a41593f3db7d4ffd154d9ea407e8dc3/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/javax.inject-1_f4f7a53bf7f0c310b427cf77f30403ea3592fe8d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/.gradle/caches/modules-2/files-2.1/com.squareup.dagger/dagger/1.2.5/965d3e29792e7c4193a2906ccadd5ec2fbb6d441/dagger-1.2.5.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="965d3e29792e7c4193a2906ccadd5ec2fbb6d441">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/dagger-1.2.5_20aba830599ca735be623943a0a62f840923610e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.1.0_720517d5df0bc7e1ed28bbc1741eeb7a749a08b7/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.9.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="acc33023966f868dfe3ecb77a3ce5676dc8de92d">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.afollestad.material-dialogs-core-0.9.0.1_7ac82704a7a3062252b8b60a93edaa7eaaa8def0/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.1.1_a101b855a8dfeb0d1cb320997cfdf029f12c334d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/koojongyun/AndroidStudioProjects/tdkdMobile1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_66516e2c486c4576bf4e50422b0fc90ab8f4dd55/classes.dex" />
+    </item>
+
+</items>

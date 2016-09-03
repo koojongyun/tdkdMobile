@@ -72,11 +72,11 @@ public class MainActivity extends Activity {
                             if("PASS".equals(response.body().getResult())) {
                                 Log.d("성공", "로그인이 성공하였습니다.");
                                 Log.d("성공", response.body().getResult().toString());
-                                Toast.makeText(getApplicationContext(), "로그인 되었습니다.", Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), "로그인 되었습니다.", Toast.LENGTH_SHORT).show();
                             } else {
                                 Log.d("실패", "아이디와 비밀번호를 확인해 주십시오.");
                                 Log.d("실패", response.body().getResult().toString());
-                                Toast.makeText(getApplicationContext(), "아이디와 비밀번호를 확인해 주십시오.", Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), "아이디와 비밀번호를 확인해 주십시오.", Toast.LENGTH_SHORT).show();
                             }
                         }
 
@@ -84,7 +84,7 @@ public class MainActivity extends Activity {
                         public void onFailure(Call<LoginVO> call, Throwable t) {
                             Log.d("실패", "로그인이 실패 하였습니다.");
                             Log.d("실패", t.getMessage());
-                            Toast.makeText(getApplicationContext(), "로그인에 실패하였습니다.", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), "로그인에 실패하였습니다.", Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
@@ -103,24 +103,24 @@ public class MainActivity extends Activity {
 
     private boolean validationInputData() {
         if("".equals(inputLoginId.getText().toString().trim())) {
-            Toast.makeText(getApplicationContext(), "ID를 입력해 주십시오.", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "ID를 입력해 주십시오.", Toast.LENGTH_SHORT).show();
             return false;
         }
 
         if(!inputLoginId.getText().toString().equals(
                 inputLoginId.getText().toString().trim())) {
-            Toast.makeText(getApplicationContext(), "공백은 허용되지 않습니다.", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "공백은 허용되지 않습니다.", Toast.LENGTH_SHORT).show();
             return false;
         }
 
         if("".equals(inputPassword.getText().toString().trim())) {
-            Toast.makeText(getApplicationContext(), "비밀번호를 입력해 주십시오.", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "비밀번호를 입력해 주십시오.", Toast.LENGTH_SHORT).show();
             return false;
         }
 
         if(!inputPassword.getText().toString().equals(
                 inputPassword.getText().toString().trim())) {
-            Toast.makeText(getApplicationContext(), "공백은 허용되지 않습니다.", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "공백은 허용되지 않습니다.", Toast.LENGTH_SHORT).show();
             return false;
         }
 
